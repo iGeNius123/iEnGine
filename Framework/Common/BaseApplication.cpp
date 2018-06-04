@@ -1,16 +1,16 @@
 #include "BaseApplication.hpp"
 
 //Prase command line, read configuration, initialize all sub modules
-int My::BaseApplication::Initialize(){
+int IENGINE::BaseApplication::Initialize(){
     m_bQuit=false;
     return 0;
 }
 
-void My::BaseApplication::Finalize(){}
+void IENGINE::BaseApplication::Finalize(){}
 
-void My::BaseApplication::Tick(){}
+void IENGINE::BaseApplication::Tick(){}
 
-bool My::BaseApplication::IsQuit(){
+bool IENGINE::BaseApplication::IsQuit(){
     return m_bQuit;
 
 }

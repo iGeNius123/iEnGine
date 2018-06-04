@@ -1,6 +1,6 @@
 #include "../Framework/Common/BaseApplication.hpp"
 
-namespace My{
+namespace IENGINE{
     BaseApplication g_App;
     IApplication* g_pApp = &g_App;
 }

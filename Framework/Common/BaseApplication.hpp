@@ -2,7 +2,7 @@
 
 #include "../Interface/IApplication.hpp"
 
-namespace My {
+namespace IENGINE {
     class BaseApplication : implements IApplication{
         public:
         virtual int Initialize();

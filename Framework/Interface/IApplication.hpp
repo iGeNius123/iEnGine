@@ -2,7 +2,7 @@
 #include "Interface.hpp"
 #include "IRuntimeModule.hpp"
 
-namespace My{
+namespace IENGINE{
     Interface IApplication: implements IRuntimeModule{
         public:
         virtual int Initialize()=0;

@@ -2,7 +2,7 @@
 
 #include "Interface.hpp"
 
-namespace My {
+namespace IENGINE {
     Interface IRuntimeModule{
         public:
         virtual ~IRuntimeModule() {};

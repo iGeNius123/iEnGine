@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include "../Interface/IApplication.hpp"
 
-using namespace My;
-namespace My {
+using namespace IENGINE;
+namespace IENGINE {
     extern IApplication* g_pApp;
 }
 

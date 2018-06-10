@@ -72,6 +72,19 @@ LRESULT CALLBACK WindowProc(HWND hWnd,UINT message, WPARAM wParam,
 {
     //sort through and find what code to run for the message given
     switch (message){
+
+        // draw a simple rectangle
+        case WM_PAINT:
+        {
+            PAINTSTRUCT ps;
+            HDC hdc = BeginPaint(hWnd,&ps);
+            RECT rec = {20,20,60,80};
+            HBRUSH brush = (HBRUSH) GetStockObject(BLACK_BRUSH);
+
+            FillRect(hdc,&rec,brush);
+
+            EndPaint(hWnd,&ps);
+        }break;
         // this message read when window is closed
         case WM_DESTROY:
         {
